@@ -38,6 +38,6 @@ and "Copy Message ID."
     export DISCORD_TOKEN="your_token"
     cargo run
 
-Writes the database to `sidekick.db` in the current directory. Override the path
-with `DATABASE_PATH` if you like.
+Note: Default behavior will have the database write to `sidekick.db` in the current directory. Override that path
+with by exporting `DATABASE_PATH` with a new value. 
 
