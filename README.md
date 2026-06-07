@@ -1,2 +1,40 @@
 # Sidekick
-A Discord Bot written in Rust designed for various purposes.
+
+A Discord Bot written using [Serenity](https://github.com/serenity-rs/serenity/tree/current) running on [Alpine Linux](https://www.alpinelinux.org/) v3.21.7. Mostly testing + various functions. 
+
+## Commands
+
+- `/gather host event location hours` — schedule an event and open RSVPs
+- `/cancel message_id` — cancel an event (host or admin only)
+- `/help` — what the bot does
+
+To get a message ID for `/cancel`: enable Developer Mode
+(User Settings → Advanced → Developer Mode), then right-click the event message
+and "Copy Message ID."
+
+## Setup
+
+1. Create an application + bot at the [Discord Developer Portal](https://discord.com/developers/applications).
+2. Invite it with the `bot` and `applications.commands` scopes, and the
+   **Manage Roles** permission. Drag the bot's role *above* where event roles
+   will sit, or it can't create/assign them.
+3. Set your bot token as an environment variable: `DISCORD_TOKEN`.
+
+## Running with Docker
+
+    docker build -t sidekick .
+    docker run -d \
+      --name sidekick \
+      -e DISCORD_TOKEN="your_token" \
+      -v sidekick-data:/data \
+      --restart unless-stopped \
+      sidekick
+
+## Running locally
+
+    export DISCORD_TOKEN="your_token"
+    cargo run
+
+Writes the database to `sidekick.db` in the current directory. Override the path
+with `DATABASE_PATH` if you like.
+
