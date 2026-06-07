@@ -1,6 +1,9 @@
 # Sidekick
 
-A Discord Bot written using [Serenity](https://github.com/serenity-rs/serenity/tree/current) running on [Alpine Linux](https://www.alpinelinux.org/) v3.21.7. Mostly testing + various functions. 
+A seriously lightweight Discord Bot written using [Serenity](https://github.com/serenity-rs/serenity/tree/current) running on [Alpine Linux](https://www.alpinelinux.org/). Mostly testing + various functions. 
+
+<img width="1134" height="94" alt="image" src="https://github.com/user-attachments/assets/b94fa8f5-db48-4f83-b7db-0e6ec88276d9" />
+
 
 ## Commands
 
@@ -9,7 +12,7 @@ A Discord Bot written using [Serenity](https://github.com/serenity-rs/serenity/t
 - `/help` — what the bot does
 
 To get a message ID for `/cancel`: enable Developer Mode
-(User Settings → Advanced → Developer Mode), then right-click the event message
+(User Settings -> Advanced -> Developer Mode), then right-click the event message
 and "Copy Message ID."
 
 ## Setup
