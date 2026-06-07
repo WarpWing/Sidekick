@@ -7,9 +7,9 @@ A seriously lightweight Discord Bot written using [Serenity](https://github.com/
 
 ## Commands
 
-- `/gather host event location hours` — schedule an event and open RSVPs
-- `/cancel message_id` — cancel an event (host or admin only)
-- `/help` — what the bot does
+- `/gather host event location hours`: schedule an event and open RSVPs
+- `/cancel message_id`: cancel an event (host or admin only)
+- `/help`: what the bot does
 
 To get a message ID for `/cancel`: enable Developer Mode
 (User Settings -> Advanced -> Developer Mode), then right-click the event message
